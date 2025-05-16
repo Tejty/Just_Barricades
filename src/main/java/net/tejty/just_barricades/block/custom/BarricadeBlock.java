@@ -149,7 +149,7 @@ public class BarricadeBlock extends HorizontalDirectionalBlock {
     @Override
     public void entityInside(BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity) {
         if (!pLevel.isClientSide()) {
-            if (pEntity instanceof Monster monster) {
+            if (pEntity instanceof Monster monster && monster.isAlive()) {
                 if (breakLayer(pLevel, pPos, pState, JustBarricadesCommonConfig.ZOMBIE_BREAK_CHANCE.get(), true)) {
                     monster.swing(InteractionHand.MAIN_HAND);
                 }
