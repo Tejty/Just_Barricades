@@ -1,0 +1,6 @@
+{
+  "parent": "just_barricades:block/barricade",
+  "textures": {
+    "all": "minecraft:block/oak_planks"
+  }
+}

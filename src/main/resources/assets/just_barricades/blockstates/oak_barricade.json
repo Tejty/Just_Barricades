@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "just_barricades:block/oak_barricade"
+    },
+    "facing=east": {
+      "model": "just_barricades:block/oak_barricade",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "just_barricades:block/oak_barricade",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "just_barricades:block/oak_barricade",
+      "y": 270
+    }
+  }
+}
