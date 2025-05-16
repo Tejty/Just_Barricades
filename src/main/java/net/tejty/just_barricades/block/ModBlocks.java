@@ -23,7 +23,23 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> OAK_BARRICADE = registerBlock("oak_barricade",
-            () -> new BarricadeBlock(BlockBehaviour.Properties.of().destroyTime(5).isViewBlocking((state, getter, pos) -> false).mapColor(MapColor.WOOD).pushReaction(PushReaction.DESTROY).sound(SoundType.WOOD).strength(5)));
+            () -> new BarricadeBlock(BlockBehaviour.Properties.of().destroyTime(5).isViewBlocking((state, getter, pos) -> false).mapColor(MapColor.WOOD).pushReaction(PushReaction.DESTROY).sound(SoundType.WOOD).strength(-1.0F, 3600000.0F)));
+    public static final RegistryObject<Block> SPRUCE_BARRICADE = registerBlock("spruce_barricade",
+            () -> new BarricadeBlock(BlockBehaviour.Properties.of().destroyTime(5).isViewBlocking((state, getter, pos) -> false).mapColor(MapColor.PODZOL).pushReaction(PushReaction.DESTROY).sound(SoundType.WOOD).strength(-1.0F, 3600000.0F)));
+    public static final RegistryObject<Block> BIRCH_BARRICADE = registerBlock("birch_barricade",
+            () -> new BarricadeBlock(BlockBehaviour.Properties.of().destroyTime(5).isViewBlocking((state, getter, pos) -> false).mapColor(MapColor.SAND).pushReaction(PushReaction.DESTROY).sound(SoundType.WOOD).strength(-1.0F, 3600000.0F)));
+    public static final RegistryObject<Block> JUNGLE_BARRICADE = registerBlock("jungle_barricade",
+            () -> new BarricadeBlock(BlockBehaviour.Properties.of().destroyTime(5).isViewBlocking((state, getter, pos) -> false).mapColor(MapColor.DIRT).pushReaction(PushReaction.DESTROY).sound(SoundType.WOOD).strength(-1.0F, 2)));
+    public static final RegistryObject<Block> ACACIA_BARRICADE = registerBlock("acacia_barricade",
+            () -> new BarricadeBlock(BlockBehaviour.Properties.of().destroyTime(5).isViewBlocking((state, getter, pos) -> false).mapColor(MapColor.COLOR_ORANGE).pushReaction(PushReaction.DESTROY).sound(SoundType.WOOD).strength(-1.0F, 3600000.0F)));
+    public static final RegistryObject<Block> CHERRY_BARRICADE = registerBlock("cherry_barricade",
+            () -> new BarricadeBlock(BlockBehaviour.Properties.of().destroyTime(5).isViewBlocking((state, getter, pos) -> false).mapColor(MapColor.TERRACOTTA_WHITE).pushReaction(PushReaction.DESTROY).sound(SoundType.CHERRY_WOOD).strength(-1.0F, 2)));
+    public static final RegistryObject<Block> DARK_OAK_BARRICADE = registerBlock("dark_oak_barricade",
+            () -> new BarricadeBlock(BlockBehaviour.Properties.of().destroyTime(5).isViewBlocking((state, getter, pos) -> false).mapColor(MapColor.COLOR_BROWN).pushReaction(PushReaction.DESTROY).sound(SoundType.CHERRY_WOOD).strength(-1.0F, 2)));
+    public static final RegistryObject<Block> MANGROVE_BARRICADE = registerBlock("mangrove_barricade",
+            () -> new BarricadeBlock(BlockBehaviour.Properties.of().destroyTime(5).isViewBlocking((state, getter, pos) -> false).mapColor(MapColor.COLOR_RED).pushReaction(PushReaction.DESTROY).sound(SoundType.CHERRY_WOOD).strength(-1.0F, 2)));
+    public static final RegistryObject<Block> BAMBOO_BARRICADE = registerBlock("bamboo_barricade",
+            () -> new BarricadeBlock(BlockBehaviour.Properties.of().destroyTime(5).isViewBlocking((state, getter, pos) -> false).mapColor(MapColor.COLOR_YELLOW).pushReaction(PushReaction.DESTROY).sound(SoundType.BAMBOO_WOOD).strength(-1.0F, 2)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
